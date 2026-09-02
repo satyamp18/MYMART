@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYMART - Exclusive Fashion & Beauty Destination</title>
+    <meta name="description" content="Shop online at MYMART for top quality Fashion clothing, Footwear, Accessories, Skincare, and Beauty items at best Rupee prices in India.">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container">
+            🚀 Free Delivery Across India on Fashion & Beauty Orders Above ₹500! Cash on Delivery Available.
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">
+                MYMART <span class="logo-tag">INDIA</span>
+            </a>
+
+            <!-- Search Bar in Header -->
+            <div class="header-search">
+                <form id="header-search-form" class="search-box">
+                    <input type="text" id="header-search-input" placeholder="Search for fashion, beauty, skincare..." aria-label="Search">
+                    <button type="submit">🔍 Search</button>
+                </form>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation">☰</button>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="nav-links-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="products.html?category=Fashion" class="nav-link">Fashion</a></li>
+                <li><a href="products.html?category=Beauty" class="nav-link">Beauty</a></li>
+                <li>
+                    <a href="cart.html" class="nav-link cart-nav-link">
+                        <div class="cart-icon-wrapper">
+                            <span class="cart-icon">🛒</span>
+                            <span class="cart-count-badge">0</span>
+                        </div>
+                        Cart
+                    </a>
+                </li>
+                <li id="navbar-auth-link">
+                    <a href="login.html" class="nav-link btn-login">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="hero-tag">✨ Welcome to MYMART</span>
+                <h1 class="hero-title">Everything You Need, All in One Place</h1>
+                <p class="hero-subtitle">Shop smart. Shop simple. Shop with MYMART for premium Fashion clothing, footwear, skincare, and cosmetics in India.</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-accent">Shop Now ➔</a>
+                    <a href="products.html?category=Fashion" class="btn btn-outline" style="color:#ffffff; border-color:#ffffff;">Explore Fashion</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&auto=format&fit=crop&q=80" alt="MYMART Fashion & Beauty Banner">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Popular Categories Section -->
+        <section class="section">
+            <h2 class="section-title">Featured Categories</h2>
+            <p class="section-subtitle">Discover our exclusive Fashion and Beauty collections</p>
+            
+            <div class="categories-grid" style="grid-template-columns: repeat(4, 1fr);">
+                <a href="products.html?category=Fashion" class="category-card">
+                    <div class="category-icon">👕</div>
+                    <div class="category-name">Men's & Women's Fashion</div>
+                </a>
+                <a href="products.html?category=Beauty" class="category-card">
+                    <div class="category-icon">💄</div>
+                    <div class="category-name">Beauty & Cosmetics</div>
+                </a>
+                <a href="products.html?search=Skincare" class="category-card">
+                    <div class="category-icon">✨</div>
+                    <div class="category-name">Skincare & Lotion</div>
+                </a>
+                <a href="products.html?search=Footwear" class="category-card">
+                    <div class="category-icon">👟</div>
+                    <div class="category-name">Shoes & Sneakers</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Featured Collections</h2>
+                    <p class="section-subtitle">Top trending fashion and beauty items for you</p>
+                </div>
+                <a href="products.html" class="btn btn-outline btn-sm">View All Products ➔</a>
+            </div>
+            
+            <div class="product-grid" id="home-featured-products">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </section>
+
+        <!-- Why Choose MYMART Section -->
+        <section class="section">
+            <h2 class="section-title" style="text-align: center;">Why Choose MYMART?</h2>
+            <p class="section-subtitle" style="text-align: center;">Providing the best shopping experience across India</p>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">🚚</div>
+                    <h3 class="feature-title">Fast Delivery</h3>
+                    <p class="feature-desc">Quick doorstep shipping across all Indian pincodes.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">💯</div>
+                    <h3 class="feature-title">100% Genuine</h3>
+                    <p class="feature-desc">All products are verified and authentic quality.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">Easy Returns</h3>
+                    <p class="feature-desc">Hassle-free 7-day return policy for peace of mind.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">💳</div>
+                    <h3 class="feature-title">Secure Payments</h3>
+                    <p class="feature-desc">Support for Cash on Delivery, UPI & Cards.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">MYMART <span class="logo-tag">INDIA</span></div>
+                <p>Your Everyday Style Destination <br> “From trendy fashion to everyday beauty essentials, find simple choices that make you feel confident and look your best.”</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="orders.html">My Orders</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="products.html?category=Fashion">Fashion Wear</a></li>
+                    <li><a href="products.html?category=Beauty">Beauty Care</a></li>
+                    <li><a href="products.html?search=Skincare">Skincare</a></li>
+                    <li><a href="products.html?search=Footwear">Footwear</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>📍 New Delhi, India</li>
+                    <li>📧 support@mymart.in</li>
+                    <li>📞 +91 98765 43210</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                © 2026 MYMART - E-Commerce project Built by Satyam Pandey. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Render featured fashion & beauty products on home page
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('home-featured-products');
+            if (container && typeof products !== 'undefined') {
+                const featured = products.slice(0, 8);
+                container.innerHTML = featured.map(p => {
+                    const discount = Math.round(((p.originalPrice - p.price) / p.originalPrice) * 100);
+                    return `
+                        <div class="product-card">
+                            ${discount > 0 ? `<span class="product-badge">${discount}% OFF</span>` : ''}
+                            <div class="product-image-container">
+                                <a href="product-details.html?id=${p.id}">
+                                    <img src="${p.image}" alt="${p.name}">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">${p.category} ${p.subcategory ? `• ${p.subcategory}` : ''}</span>
+                                <h3 class="product-title">
+                                    <a href="product-details.html?id=${p.id}">${p.name}</a>
+                                </h3>
+                                <div class="product-rating">
+                                    ${renderStarRating(p.rating)}
+                                    <span class="rating-count">(${p.reviewsCount})</span>
+                                </div>
+                                <div class="product-price-row">
+                                    <span class="product-price">${formatPrice(p.price)}</span>
+                                    <span class="product-original-price">${formatPrice(p.originalPrice)}</span>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="product-details.html?id=${p.id}" class="btn btn-outline btn-sm">Details</a>
+                                    <button class="btn btn-accent btn-sm" onclick="addToCart(${p.id}, 1)">🛒 Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+        });
+    </script>
+</body>
+</html>

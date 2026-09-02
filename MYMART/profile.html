@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - MYMART</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container">
+            🚀 Free Delivery Across India on Orders Above ₹500! Cash on Delivery Available.
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">
+                MYMART <span class="logo-tag">INDIA</span>
+            </a>
+
+            <!-- Search Bar in Header -->
+            <div class="header-search">
+                <form id="header-search-form" class="search-box">
+                    <input type="text" id="header-search-input" placeholder="Search for products, categories..." aria-label="Search">
+                    <button type="submit">🔍 Search</button>
+                </form>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation">☰</button>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="nav-links-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="products.html?category=Electronics" class="nav-link">Categories</a></li>
+                <li>
+                    <a href="cart.html" class="nav-link cart-nav-link">
+                        <div class="cart-icon-wrapper">
+                            <span class="cart-icon">🛒</span>
+                            <span class="cart-count-badge">0</span>
+                        </div>
+                        Cart
+                    </a>
+                </li>
+                <li id="navbar-auth-link">
+                    <a href="login.html" class="nav-link btn-login">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container section">
+        <h1 class="section-title">My Account</h1>
+        <p class="section-subtitle">Manage your personal profile and account details</p>
+
+        <!-- Profile Page Container -->
+        <div id="profile-page-container">
+            <!-- Dynamically populated via auth.js -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">MYMART <span class="logo-tag">INDIA</span></div>
+                <p>Everything You Need, All in One Place. A complete student-level e-commerce project built with HTML5, CSS3, Vanilla JS and Browser LocalStorage.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="orders.html">My Orders</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="products.html?category=Electronics">Electronics</a></li>
+                    <li><a href="products.html?category=Fashion">Fashion</a></li>
+                    <li><a href="products.html?category=Grocery">Grocery</a></li>
+                    <li><a href="products.html?category=Home%20%26%20Kitchen">Home & Kitchen</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>📍 New Delhi, India</li>
+                    <li>📧 support@mymart.in</li>
+                    <li>📞 +91 98765 43210</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                © 2026 MYMART - Student Frontend E-Commerce Project. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

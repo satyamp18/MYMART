@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion & Beauty Catalog - MYMART</title>
+    <meta name="description" content="Browse and search all Fashion & Beauty products including clothing, footwear, accessories, skincare, and cosmetics on MYMART.">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container">
+            🚀 Free Delivery Across India on Fashion & Beauty Orders Above ₹500! Cash on Delivery Available.
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">
+                MYMART <span class="logo-tag">INDIA</span>
+            </a>
+
+            <!-- Search Bar in Header -->
+            <div class="header-search">
+                <form id="header-search-form" class="search-box">
+                    <input type="text" id="header-search-input" placeholder="Search for fashion, beauty, skincare..." aria-label="Search">
+                    <button type="submit">🔍 Search</button>
+                </form>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation">☰</button>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="nav-links-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link active">Products</a></li>
+                <li><a href="products.html?category=Fashion" class="nav-link">Fashion</a></li>
+                <li><a href="products.html?category=Beauty" class="nav-link">Beauty</a></li>
+                <li>
+                    <a href="cart.html" class="nav-link cart-nav-link">
+                        <div class="cart-icon-wrapper">
+                            <span class="cart-icon">🛒</span>
+                            <span class="cart-count-badge">0</span>
+                        </div>
+                        Cart
+                    </a>
+                </li>
+                <li id="navbar-auth-link">
+                    <a href="login.html" class="nav-link btn-login">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container section">
+
+        <h1 class="section-title">Fashion & Beauty Collection</h1>
+        <p class="section-subtitle">Find the best deals on trending apparel, footwear, skincare, and cosmetics in Rupees (₹)</p>
+
+        <!-- Filter & Sorting Controls -->
+        <div class="filter-bar">
+            <div class="filter-group">
+                <span class="filter-label">Categories:</span>
+                <div class="category-pills" id="category-pills-container">
+                    <!-- Dynamic category pills -->
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <span class="filter-label">Sort By:</span>
+                <select id="sort-products-select" class="sort-select">
+                    <option value="default">Featured / Default</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating">Highest Rated</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Results Metadata Counter -->
+        <div id="results-count-text" class="results-meta">Showing products</div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="products-grid-container">
+            <!-- Dynamically populated via products-page.js -->
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">MYMART <span class="logo-tag">INDIA</span></div>
+                <p>Everything You Need, All in One Place. A complete student-level e-commerce project built with HTML5, CSS3, Vanilla JS and Browser LocalStorage.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="orders.html">My Orders</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="products.html?category=Fashion">Fashion Wear</a></li>
+                    <li><a href="products.html?category=Beauty">Beauty Care</a></li>
+                    <li><a href="products.html?search=Skincare">Skincare</a></li>
+                    <li><a href="products.html?search=Footwear">Footwear</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>📍 New Delhi, India</li>
+                    <li>📧 support@mymart.in</li>
+                    <li>📞 +91 98765 43210</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                © 2026 MYMART - Student Frontend E-Commerce Project. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/products-page.js"></script>
+</body>
+</html>
